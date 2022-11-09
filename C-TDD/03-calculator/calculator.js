@@ -1,5 +1,5 @@
 const add = (numbers) => {
-    const result = numbers.toString().split(",");
+    const result = numbers.split(",");
     return result.reduce((accumulatedValue, number) => {
       const integer = Number(number);
       if (integer > 1000) return accumulatedValue;
@@ -8,5 +8,6 @@ const add = (numbers) => {
       return accumulatedValue + integer;
     }, 0);
   }
-  console.log(add("7,1"))
+
+
   module.exports = add;
