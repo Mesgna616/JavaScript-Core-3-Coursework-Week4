@@ -4,10 +4,22 @@
 
 // for example the factorial of 5 is 120
 // 120 = 1 * 2 * 3 * 4 * 5
+        
 
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+    let factorial = 1;
+    if (int === 0 || int === 1) {
+      return factorial;
+    } else {
+      for (let i = int; i >= 1; i--) {
+        factorial *= i;
+      }
+      return factorial;
+    }
+  }
+
 
 module.exports = factorial;
